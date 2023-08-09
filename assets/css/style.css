@@ -33,6 +33,7 @@ body {
 .top {
   grid-area: band;
   height: 4vh;
+  width: 100%;
   background: gray;
   opacity: 0.3;
   position: fixed;
@@ -153,7 +154,6 @@ header {
   grid-area: gallery;
   min-height: 90vh;
   width: 100vw;
-  box-sizing: border-box;
 }
 
 .container-g {
@@ -211,6 +211,7 @@ header {
   display: flex;
   height: 80%;
   width: 90%;
+  background: black;
 }
 
 .land img {
@@ -312,7 +313,7 @@ header {
 
 .mod {
   height: 90vh;
-  width: 100%;
+  width: 90%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -354,7 +355,7 @@ header {
 
 .foods {
   height: auto;
-  margin: auto;
+  box-sizing: border-box;
   padding-top: 10px;
   text-shadow: 0 0 10px #c237db, 0 0 10px #c237db 0 10px #c237db 0 10px #c237db;
   font-weight: bold;
@@ -416,6 +417,7 @@ header {
 footer {
   grid-area: footer;
   height: 11vh;
+  width: 100%;
   background: black;
   opacity: 0.3;
   display: flex;
@@ -476,6 +478,7 @@ footer {
 
 @media (min-width: 769px) {
   .layout {
+    width: 90%;
     display: grid;
     grid:
       "band band band band" 1fr
@@ -484,19 +487,28 @@ footer {
       "nav gallery gallery gallery" auto
       "nav gallery gallery gallery" auto
       "footer footer footer footer" 1fr
-      / 1fr 1fr 1fr 1fr;
-    gap: 2px;
+      / 1vw auto auto auto;
   }
 
   header {
     height: 90vh;
-    width: 10vw;
+    width: 15vw;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     position: fixed;
-    margin-left: 10px;
+  }
+
+  .container {
+    width: 98vw;
+    margin: 110px 0 220vh 0;
+    box-sizing: border-box;
+  }
+
+  .container-g {
+    width: 95%;
+    padding-left: 20px;
   }
 
   .logo {
@@ -527,11 +539,6 @@ footer {
   .menu li a:hover {
     color: yellowgreen;
     font-size: 3rem;
-  }
-
-  .container {
-    width: 90vw;
-    margin: 110px 0 220vh 0;
   }
 
   .area1 {
@@ -605,7 +612,7 @@ footer {
   }
 
   .moda-text {
-    width: 100%;
+    width: 80%;
     rotate: 0deg;
     position: absolute;
     height: 38%;
