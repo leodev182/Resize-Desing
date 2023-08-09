@@ -531,7 +531,7 @@ footer {
 
   .container {
     width: 90vw;
-    margin: 110px 0 200vh 0;
+    margin: 110px 0 220vh 0;
   }
 
   .area1 {
@@ -587,6 +587,7 @@ footer {
   .area4 {
     height: 200px;
     width: auto;
+    margin-bottom: 20px;
     overflow: hidden;
     display: grid;
     align-content: center;
